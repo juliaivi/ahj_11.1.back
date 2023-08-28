@@ -37,7 +37,7 @@ function randomInterval() {
 randomInterval();
 
 app.get('/messages/unread', async (req, res) => {// url - '/messages/unread'
-    // messages.messages = [];
+    messages.messages = [];
     messages.messages.push(createMessage());
     res.send(JSON.stringify(messages));
 })
